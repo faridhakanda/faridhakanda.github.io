@@ -10,13 +10,39 @@
             margin: 0;
             padding: 0;
         }
-        .main {
+        /* Header part css style components */
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main_headers {
+            justify-content: space-around;
+            display: flex;
             background-color: aliceblue;
+            position: fixed;
             width: 100%;
             height: auto;
-            padding: 20px;
+            padding: 1px;
+            margin-top: -100px;
         }
-        .farid {
+        .main_headers a {
+            text-decoration: none;
+            font-size: 35px;
+        }
+        .contact img {
+            width: 35px;
+            height: 35px;
+        }
+
+        /* main part css style components */
+        main {
+            font-family: Arial, Arial, Helvetica, sans-serif;
+        }
+        .image_part {
+            margin-top: 100px;
+            
+        }
+        /* Image sizing style contents */
+        .image_farid {
             border-radius: 50%;
             width: 200px;
             height: 200px;
@@ -24,50 +50,132 @@
             object-fit: cover;
             object-position: 0 10%;
         }
-        .skills {
-            text-align:center;
-            padding: 10px;
-            margin: 20px;
-            
-
+        .main_name {
+            color:darkblue;
         }
-        .sill {
-            text-align: center;
-            padding: auto;
-            margin: 0;
+        #about {
+            justify-content: start;
+            text-align: start;
+            margin-top: -30px;
+            margin-left: 50px;
+            padding: 2px;
+        }
+        #skill {
+            justify-content: start;
+            text-align: start;
+            margin-top: -25px;
+            margin-left: 50px;
+        }
+        #skill h1 {
+            font-size: 25px;
+        }
+        #skill h2 {
+            font-size: 20px;
+        }
+        
+        ul {
+            display: inline-flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        ul li {
+            list-style-type:none;
         }
         .footer {
-            position: fixed;
             background-color: midnightblue;
             color: white;
-            padding-top: -50px;
-            left: 0;
+            margin-bottom: -0px;
+            padding-top: 5px;
+            padding-bottom: 10px;
             width: 100%;
-            bottom: 0;
             text-align: center;
         }
         
     </style>
 </head>
 <body>
+    <header>
+        <div class="main_headers">
+            <h1>
+                <a href="#home">Farid</a>
+            </h1>
+            <div class="contact">
+                <ul>
+                    <li>
+                        <a href="https://www.github.com/faridhakanda">
+                            <img src="github.png" alt="github" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/faridhakanda">
+                            <img src="xt.png" alt="x" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.t.me/faridhakanda">
+                            <img src="telegram.png" alt="telegram" />
+                        </a>
+                    </li>
+                    
+                </ul>
     
-    <div class="main">
-        <h1>Farid Akanda</h1>
-    </div>
-    <div class="div">
-        <img class="farid" src="faridimage.jpg" alt="farid" />
-    </div>
-    <div class="skills">
-        <div class="skill">
-            <h1>Skills: </h1>
-            <h2>Languages: C/C++, Python, Javascript and SQL</h2>
-            <h2>Tools &amp; Technologies: Next.js, Django, RestAPI, PostgreSQL, PostmanAPI, Git, Linux</h2>
+            </div>
         </div>
-    </div>
-    <div class="footer">
-        <h1>Powered by Farid Akanda</h1>
-        <h2>Farid Akanda &copy; All Rights Reserved 2024.</h2>
-    </div>
+    </header>
+    <main>
+        <div class="image_part">
+            <img class="image_farid" src="faridimage.jpg" alt="farid" />
+            <h1 class="main_name">Farid Akanda</h1>
+        </div>
+        <section id="about">
+            <h2>Hello!</h2>
+            <h3>I&rsquo; Farid, a computer programmer and full stack developer in Bangladesh.</h3>
+        </section>
+        <section id="skill">
+            <h1>Skills:</h1>
+            <h2>Languages: 
+                <ul>
+                    <li>C/C++</li>
+                    <li>Python</li>
+                    <li>Javascript</li>
+                    <li>SQL</li>
+                </ul>
+            </h2>
+            <h2>Tools &amp; Technologies: 
+                <ul>
+                    <li>Next.js</li>
+                    <li>Django</li>
+                    <li>PostgreSQL</li>
+                    <li>Git</li>
+                    <li>Postman</li>
+                    <li>Linux</li>
+                </ul>
+            </h2>
+            <h2>Front-end:
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>TailwindCSS</li>
+                </ul>
+            </h2>
+            <h2>Back-end:
+                <ul>
+                    <li>Django</li>
+                    <li>PostgreSQL</li>
+                    <li>Django RestAPI</li>
+                </ul>
+            </h2>
+            
+        </section>
+    </main>
     
+    <footre>
+        <div class="footer">
+            <p>Powered by</p>
+            <h1>Farid Akanda</h1>
+            <h4>Farid Akanda &copy; All Rights Reserved 2024.</h4>
+        </div>
+    </footre>
 </body>
 </html>
