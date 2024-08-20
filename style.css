@@ -124,3 +124,17 @@ main {
     text-align: center;
     overflow: auto;
 }
+
+
+.pdf {
+    padding: 4px;
+    margin-bottom: 2px;
+    
+}
+.pdf a {
+    text-decoration: none;
+    background-color: aqua;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
