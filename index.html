@@ -123,8 +123,14 @@
         <div class="footer">
             <p>Powered by</p>
             <h1>Farid Akanda</h1>
-            <h4>Farid Akanda &copy; All Rights Reserved 2024.</h4>
+            
+            <h4>Farid Akanda &copy; All Rights Reserved <span id="my_year"></span>.</h4>
         </div>
     </footer>
+    <script>
+        const dateOfYear = new Date();
+        const forYear = dateOfYear.getFullYear();
+        document.getElementById("my_year").innerHTML = forYear;
+    </script>
 </body>
 </html>
