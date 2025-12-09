@@ -138,3 +138,11 @@ main {
     padding: 5px;
     border-radius: 5px;
 }
+
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+
+}
