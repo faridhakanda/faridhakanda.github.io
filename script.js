@@ -16,3 +16,5 @@ gsap.from(split.chars, {
 //     duration: 1,
 //     x: 100
 // });
+
+// adding here script code for making animation
