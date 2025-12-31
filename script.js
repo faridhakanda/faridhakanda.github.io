@@ -10,6 +10,7 @@ gsap.from(split.chars, {
     xPercent: -100,
     autoAlpha: 0,
     stagger: 0.2
+    
 });
 // gsap.to(".box", {
 //     rotation: 36,
